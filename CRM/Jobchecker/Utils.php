@@ -16,6 +16,7 @@ class CRM_Jobchecker_Utils {
       'return' => ["id", "name"],
       'is_active' => 1,
       'api_action' => ['!=' => "Statuschecker"],
+      'options' => ['limit' => 0],
     ]);
     $jobList = [];
     foreach ($result['values'] as $job) {
